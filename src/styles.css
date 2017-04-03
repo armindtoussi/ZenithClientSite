@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin:0;   
+}
+
+html {
+    position:relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: Helvetica, Arial;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.header {
+    margin:auto;
+    padding: 2%;
+    width: 100%;
+    background:darkslategray;
+}
+
+.header h1 {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 3em;
+}
+
+.content { 
+    margin:auto;
+    padding: 2%;
+    padding-bottom: 5%;
+    width: 100%;
+    height:auto;
+    background:whitesmoke;
+    color: #171617;
+}
+
+.content h1 {
+    text-align: center;
+    padding: 1%;
+    font-size: 3em;
+    color: steelblue;
+}
+
+.content table {
+    margin:auto;
+}
+
+.footer {
+    margin: auto;
+    margin-top: 10%;
+    padding: 3%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: #171617;
+    color: whitesmoke;
+    
+}
+
+.footer p {
+    font-size: .75em;
+    text-align: center;
+}

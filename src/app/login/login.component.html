@@ -1,0 +1,11 @@
+
+<div>
+    <h2>Login</h2>
+    <form name="form" (ngSubmit)="onLogin()" novalidate>
+        <label  for="username">Username:</label>
+        <input  type="text" [(ngModel)]="username" placeholder="Username" name="username" required="true" />
+        <label  for="password">Password:</label>
+        <input  type="password" [(ngModel)]="password" placeholder="Password" name="password" required="true" />
+        <button type="submit">Login</button>
+    </form>
+</div>

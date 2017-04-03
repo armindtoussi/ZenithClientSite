@@ -1,0 +1,35 @@
+
+
+
+table {
+    width: 70%;
+}
+
+table tr td {
+    padding: 1%;
+    border: 2px solid lightsteelblue;
+}
+
+
+th {
+    padding: 1%;
+    text-align: left;
+    background:steelblue;
+    color: cornsilk;
+
+}
+
+tr {
+    background: cornsilk;
+}
+
+tr:hover {
+    background: lightsteelblue;
+    cursor:pointer;
+}
+
+
+td {
+    color:steelblue;
+    font-weight:bold;
+}

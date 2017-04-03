@@ -1,0 +1,27 @@
+
+<h1>{{title}}</h1>
+
+<div class="tblwrapper">
+<table *ngIf="events">
+  <thead>
+    <tr>
+      <th>Created On</th>
+      <th>Entered By</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Activity</th>
+      <th>Active</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let e of events; let i = index; ">
+      <td>{{e.creationDate}}</td>
+      <td>{{e.enteredByUsername}}</td>
+      <td>{{e.eventFromDateTime}}</td>
+      <td>{{e.eventToDateTime}}</td>
+      <td>{{e.activity.activityDescription}}</td>
+      <td>{{e.isActive}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>

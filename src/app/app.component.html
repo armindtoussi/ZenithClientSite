@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<h1>{{title}} </h1>
+
+<a *ngIf="authService.isLoggedIn()">You are logged in</a>
+
+<nav>
+    <a routerLink="/events">Event List</a>
+    <a *ngIf="!authService.isLoggedIn()" routerLink="/login">Login</a>
+    <a *ngIf="authService.isLoggedIn()" routerLink="/login" (click)="logout()">Logout</a>
+</nav>
+<router-outlet></router-outlet>
